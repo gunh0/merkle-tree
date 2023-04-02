@@ -20,7 +20,7 @@ To use this implementation in your own code, you can import the merkle package a
 
 ### Output
 
-```
+```bash
 go run main.go
 └── 2846362fb3dce03001286fe9a997206a0ade591d5bddbfed0a7a9901bac798cc
     ├── 7305db9b2abccd706c256db3d97e5ff48d677cfe4d3a5904afb7da0e3950e1e2
@@ -29,6 +29,26 @@ go run main.go
     └── 487e8e3fb58ea5fc6855763fe7a918bda75f564dd0649d8c6b7aefb6f23bd094
         ├── 7975edd9e7393c229e744913fe0d0bb86fb4cf46906e2e51152137e20ad15590
         └── dc9c5edb8b2d479e697b4b0b8ab874f32b325138598ce9e7b759eb8292110622
+```
+
+```bash
+# docker-compose up
+
+...
+
+[+] Building 0.0s (0/0)                                                                                                                                                                                                            docker:desktop-linux
+[+] Running 2/2
+ ✔ Network merkle-tree_default  Created                                                                                                                                                                                                            0.0s
+ ✔ Container merkle-tree        Created                                                                                                                                                                                                            0.4s
+Attaching to merkle-tree
+merkle-tree  | └── 2846362fb3dce03001286fe9a997206a0ade591d5bddbfed0a7a9901bac798cc
+merkle-tree  |     ├── 7305db9b2abccd706c256db3d97e5ff48d677cfe4d3a5904afb7da0e3950e1e2
+merkle-tree  |     │   ├── 2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824
+merkle-tree  |     │   └── 486ea46224d1bb4fb680f34f7c9ad96a8f24ec88be73ea8e5a6c65260e9cb8a7
+merkle-tree  |     └── 487e8e3fb58ea5fc6855763fe7a918bda75f564dd0649d8c6b7aefb6f23bd094
+merkle-tree  |         ├── 7975edd9e7393c229e744913fe0d0bb86fb4cf46906e2e51152137e20ad15590
+merkle-tree  |         └── dc9c5edb8b2d479e697b4b0b8ab874f32b325138598ce9e7b759eb8292110622
+merkle-tree exited with code 0
 ```
 
 <br/>
